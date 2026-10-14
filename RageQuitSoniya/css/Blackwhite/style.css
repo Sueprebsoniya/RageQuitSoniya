@@ -1,0 +1,254 @@
+/* =========================
+   BASIC SETTINGS
+   ========================= */
+
+   body {
+    margin: 0;
+    padding: 0;
+    background-color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #333333;
+}
+
+
+/* =========================
+   MAIN WEBSITE
+   ========================= */
+
+#main {
+    width: 800px;
+    margin: 30px auto;
+    background-color: #ffffff;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+#header {
+    height: 135px;
+    background-color: #777777;
+    background: linear-gradient(#999999, #555555);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#logo h1 {
+    margin: 5px 0 0 0;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: normal;
+}
+
+#black {
+    color: #111111;
+    text-decoration: none;
+}
+
+#white {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#logo h2 {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#metamorph {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* =========================
+   MENU
+   ========================= */
+
+#menu {
+    height: 45px;
+    background: linear-gradient(#555555, #111111);
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+#menu li {
+    margin: 0;
+    padding: 0;
+}
+
+#menu a {
+    display: block;
+    padding: 14px 32px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#menu a:hover {
+    background-color: #666666;
+}
+
+
+/* =========================
+   CONTENT
+   ========================= */
+
+#content {
+    display: flex;
+    padding: 25px;
+    background-color: #ffffff;
+}
+
+
+/* =========================
+   LEFT SIDEBAR
+   ========================= */
+
+#left {
+    width: 210px;
+    padding-right: 25px;
+    box-sizing: border-box;
+}
+
+.sidebar-box {
+    margin-bottom: 25px;
+}
+
+
+/* SIDEBAR TITLES */
+
+#left h3 {
+    margin: 0 0 15px 0;
+    padding: 10px 15px;
+
+    color: #ffffff;
+    font-size: 15px;
+
+    background: linear-gradient(#888888, #222222);
+
+    border-radius: 12px;
+}
+
+
+/* LOGIN FORM */
+
+#left label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+#left input[type="text"],
+#left input[type="password"] {
+    width: 100%;
+    height: 27px;
+    margin-bottom: 10px;
+    border: 1px solid #bbbbbb;
+    box-sizing: border-box;
+}
+
+#left input[type="submit"] {
+    padding: 4px 10px;
+    margin-bottom: 8px;
+}
+
+#left form a {
+    display: block;
+    color: #333333;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+
+/* COMPANY NEWS */
+
+#left h4 {
+    margin: 15px 0 3px 0;
+    font-size: 14px;
+    color: #333333;
+}
+
+#left .sidebar-box > a {
+    color: #555555;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+
+/* =========================
+   RIGHT CONTENT
+   ========================= */
+
+#right {
+    width: 535px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+#right h1 {
+    margin: 0 0 15px 0;
+    font-family: Georgia, serif;
+    font-size: 29px;
+    font-weight: bold;
+    color: #222222;
+}
+
+#right h2 {
+    margin: 15px 0 10px 0;
+    font-size: 16px;
+    color: #333333;
+}
+
+#right p {
+    margin: 0 0 10px 0;
+    font-size: 13px;
+    line-height: 1.45;
+    color: #444444;
+}
+
+
+/* =========================
+   POST INFORMATION
+   ========================= */
+
+.post {
+    margin-bottom: 25px;
+}
+
+.post-info {
+    text-align: right;
+    margin-top: 15px;
+    font-size: 11px;
+    color: #777777;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+#footer {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
+
+#footer p {
+    margin: 5px;
+}
+
+#footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
