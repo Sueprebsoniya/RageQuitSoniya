@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Practice</title>
+
+    <!-- Install jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1 id="titleBar">Hello World!</h1>
+
+    <p id="message">I am learning jQuery!</p>
+
+    <button id="hideBtn">Hide Message</button>
+    <button id="showBtn">Show Message</button>
+    <button id="fadeBtn">Fade Out Title</button>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#hideBtn").click(function() {
+                $("#message").hide();
+            });
+
+            $("#showBtn").click(function() {
+                $("#message").show();
+            });
+
+            $("#fadeBtn").click(function() {
+                $("#titleBar").fadeOut();
+            });
+
+        });
+    </script>
+
+</body>
+</html>
