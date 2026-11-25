@@ -1,0 +1,421 @@
+
+/* =================================
+   1. GENERAL SETTINGS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eee9dc;
+    color: #39382f;
+    font-family: 'DM Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#app {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* =================================
+   2. NAVIGATION
+================================= */
+
+.navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 30px 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 10;
+}
+
+.logo {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.5;
+}
+
+/* =================================
+   3. HERO SECTION
+================================= */
+
+.hero {
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    padding: 100px 5%;
+}
+
+.hero-intro {
+    position: relative;
+    z-index: 3;
+
+    text-align: center;
+    max-width: 550px;
+}
+
+.small-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-family: 'DM Serif Display', serif;
+
+    font-size: clamp(55px, 7vw, 95px);
+    font-weight: normal;
+
+    line-height: 0.98;
+}
+
+.hero-description {
+    font-size: 13px;
+    line-height: 1.8;
+
+    margin-top: 25px;
+}
+
+.scroll-link {
+    display: inline-block;
+
+    margin-top: 35px;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    transition: letter-spacing 0.3s ease;
+}
+
+.scroll-link:hover {
+    letter-spacing: 4px;
+}
+
+/* =================================
+   4. HERO COLLAGE
+================================= */
+
+.hero-collage {
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+}
+
+.paper {
+    position: absolute;
+
+    background: #fffdf5;
+    padding: 10px;
+
+    box-shadow: 0 8px 25px #00000020;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #c6c4ad;
+
+    color: #696956;
+
+    font-family: 'DM Serif Display', serif;
+    font-size: 17px;
+}
+
+.paper p {
+    font-size: 10px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+
+/* FOUR DIFFERENT POSITIONS */
+
+.hero-item-1 {
+    width: 165px;
+    height: 210px;
+
+    top: 15%;
+    left: 12%;
+
+    transform: rotate(-9deg);
+}
+
+.hero-item-2 {
+    width: 155px;
+    height: 190px;
+
+    top: 19%;
+    right: 13%;
+
+    transform: rotate(8deg);
+}
+
+.hero-item-3 {
+    width: 170px;
+    height: 205px;
+
+    bottom: 10%;
+    left: 23%;
+
+    transform: rotate(7deg);
+}
+
+.hero-item-4 {
+    width: 145px;
+    height: 180px;
+
+    bottom: 12%;
+    right: 23%;
+
+    transform: rotate(-8deg);
+}
+
+/* =================================
+   5. ARCHIVE SECTION
+================================= */
+
+.archive {
+    min-height: 120vh;
+
+    padding: 120px 8%;
+
+    background-color: #e6dfd0;
+}
+
+.archive-heading {
+    text-align: center;
+}
+
+.archive-heading h2 {
+    font-family: 'DM Serif Display', serif;
+
+    font-size: 65px;
+    font-weight: normal;
+}
+
+.archive-heading > p:last-child {
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+
+/* DOCUMENT BOARD */
+
+.archive-board {
+    position: relative;
+
+    max-width: 1100px;
+    height: 900px;
+
+    margin: 50px auto 0;
+}
+
+
+/* INDIVIDUAL DOCUMENTS */
+
+.document {
+    position: absolute;
+
+    background: #fffdf5;
+
+    padding: 12px;
+
+    width: 240px;
+
+    box-shadow: 0 8px 25px #00000020;
+
+    transition: box-shadow 0.3s ease;
+}
+
+.document:hover {
+    box-shadow: 0 15px 35px #00000025;
+    z-index: 5;
+}
+
+.document-image {
+    height: 180px;
+
+    background: #b9bca8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #656957;
+
+    font-family: 'DM Serif Display', serif;
+}
+
+.document-info {
+    padding: 12px 3px 5px;
+}
+
+.document-info span {
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.document-info h3 {
+    font-family: 'DM Serif Display', serif;
+
+    font-size: 21px;
+    font-weight: normal;
+
+    margin: 8px 0;
+}
+
+.document-info p {
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* SCATTERED DOCUMENT POSITIONS */
+
+.document-1 {
+    top: 30px;
+    left: 5%;
+    transform: rotate(-7deg);
+}
+
+.document-2 {
+    top: 180px;
+    left: 38%;
+    transform: rotate(5deg);
+}
+
+.document-3 {
+    top: 50px;
+    right: 4%;
+    transform: rotate(8deg);
+}
+
+.document-4 {
+    top: 490px;
+    left: 12%;
+    transform: rotate(6deg);
+}
+
+.document-5 {
+    top: 540px;
+    right: 10%;
+    transform: rotate(-6deg);
+}
+
+.document-6 {
+    top: 330px;
+    left: 70%;
+    transform: rotate(4deg);
+}
+
+/* =================================
+   6. FOOTER
+================================= */
+
+footer {
+    background: #39382f;
+    color: #eee9dc;
+
+    padding: 35px 6%;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+
+/* =================================
+   7. RESPONSIVE SETTINGS
+================================= */
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        gap: 12px;
+        font-size: 9px;
+    }
+
+    .hero-item {
+        opacity: 0.45;
+    }
+
+    .archive-board {
+        height: auto;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .document {
+        position: relative;
+
+        width: 100%;
+
+        top: auto;
+        left: auto;
+        right: auto;
+
+        transform: rotate(0deg);
+    }
+
+    .document-image {
+        height: 140px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}

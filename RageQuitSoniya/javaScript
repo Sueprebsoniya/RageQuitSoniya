@@ -1,0 +1,15 @@
+
+const express = require('express');
+const path = require('path');
+
+const app = express();
+const PORT = 3000;
+
+// Your website is inside this folder
+app.use(express.static(
+    path.join(__dirname, 'creative_archive_portfolio')
+));
+
+app.listen(PORT, () => {
+    console.log(`Portfolio running at http://localhost:${PORT}`);
+});
